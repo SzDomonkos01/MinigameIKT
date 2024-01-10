@@ -1,0 +1,73 @@
+.grid-container{
+    width: 1000px;
+}
+
+.grid-row{
+    display: flex;
+}
+
+.wall{
+    background-image: url("cobblestone.png");
+}
+
+.cell {
+    position: relative;
+    overflow: hidden;
+    background-color: lightgreen;
+}
+
+.player1 {
+    position: absolute;
+    background-image: url("blue.png");
+    width: 20px;
+    height: 20px;
+    /* border-radius: 50%; */
+}
+.player2 {
+    position: absolute;
+    bottom: 0;
+    background-image: url("red.png");
+    width: 20px;
+    height: 20px;
+    /* border-radius: 50%; */
+}
+
+.suprise1 {
+    position: absolute;
+    background-color: green;
+    width: 90%;
+    height: 90%;
+    border-radius: 20%;
+    border: 2px solid white;
+    border-radius: border-box;
+}
+
+.suprise2 {
+    position: absolute;
+    background-color: yellow;
+    width: 90%;
+    height: 90%;
+    border-radius: 20%;
+    border: 2px solid white;
+    border-radius: border-box;
+}
+
+.suprise3 {
+    position: absolute;
+    background-color: black;
+    width: 90%;
+    height: 90%;
+    border-radius: 20%;
+    border: 2px solid white;
+    border-radius: border-box;
+}
+
+.suprise4 {
+    position: absolute;
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    border-radius: 20%;
+    border: 2px solid white;
+    border-radius: border-box;
+}
