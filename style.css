@@ -1,73 +1,85 @@
-.grid-container{
-    width: 1000px;
+body {
+    background-image: url(ideiglenes1.jpg);
 }
 
-.grid-row{
-    display: flex;
+.main {
+    background-image: url(ideiglenes2.jpg);
+    width: 430px;
+    height: 932px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.wall{
-    background-image: url("cobblestone.png");
-}
-
-.cell {
+.gomb {
     position: relative;
-    overflow: hidden;
-    background-color: lightgreen;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 700px;
 }
 
-.player1 {
-    position: absolute;
-    background-image: url("blue.png");
-    width: 20px;
-    height: 20px;
-    /* border-radius: 50%; */
-}
-.player2 {
-    position: absolute;
-    bottom: 0;
-    background-image: url("red.png");
-    width: 20px;
-    height: 20px;
-    /* border-radius: 50%; */
-}
-
-.suprise1 {
-    position: absolute;
-    background-color: green;
-    width: 90%;
-    height: 90%;
-    border-radius: 20%;
-    border: 2px solid white;
-    border-radius: border-box;
-}
-
-.suprise2 {
-    position: absolute;
-    background-color: yellow;
-    width: 90%;
-    height: 90%;
-    border-radius: 20%;
-    border: 2px solid white;
-    border-radius: border-box;
+.kezdes {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
 }
 
-.suprise3 {
-    position: absolute;
-    background-color: black;
-    width: 90%;
-    height: 90%;
-    border-radius: 20%;
-    border: 2px solid white;
-    border-radius: border-box;
+.kezdes:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
 }
 
-.suprise4 {
-    position: absolute;
-    background-color: white;
-    width: 90%;
-    height: 90%;
-    border-radius: 20%;
-    border: 2px solid white;
-    border-radius: border-box;
+.kezdes:focus {
+  user-select: auto;
+}
+
+.kezdes:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.kezdes:disabled {
+  cursor: auto;
+}
+
+.kezdes:active {
+  border-width: 4px 0 0;
+  background: none;
 }
